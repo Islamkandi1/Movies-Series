@@ -1,6 +1,6 @@
 import React, { createContext } from "react";
 import axios from "axios";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import toast from "./../../node_modules/react-hot-toast/src/index";
 export const favoriteContext = createContext();
 const AddToFavorite = ({ children }) => {
@@ -22,16 +22,22 @@ const AddToFavorite = ({ children }) => {
       }
     );
   }
-  const {  mutate, isPending } = useMutation({
+  const queryClient = useQueryClient();
+  const { mutate, isPending } = useMutation({
     mutationFn: addFavorite,
     onSuccess: () => {
       toast.success("success");
+      queryClient.invalidateQueries({
+        queryKey: ["fav-movies"],
+      });
+      queryClient.invalidateQueries({
+        queryKey: ["fav-series"],
+      });
     },
     onError: () => {
       toast.success("some thing went wrong");
     },
   });
-
 
   const values = {
     mutate,

@@ -45,7 +45,6 @@ const Favorite = () => {
     ...(movies.data?.data?.results || []),
     ...(series.data?.data?.results || []),
   ];
-  console.log(allFavorites);
 
   return (
     <>
