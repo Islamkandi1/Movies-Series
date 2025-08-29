@@ -72,7 +72,7 @@ const Details = () => {
           <button
             type="button"
             onClick={back}
-            className="absolute top-[-20px] lg:top-[60px]  bg-[#0D0D0D] hover:bg-[#1F1F1F] transition-all duration-300  border-[1px] border-gray-500  capitalize px-4 py-2 rounded-[10px] cursor-pointer flex  items-center gap-2"
+            className="absolute top-[-20px] lg:top-[6 0px]  bg-[#0D0D0D] hover:bg-[#1F1F1F] transition-all duration-300  border-[1px] border-gray-500  capitalize px-4 py-2 rounded-[10px] cursor-pointer flex  items-center gap-2"
           >
             <span>
               <FaArrowLeft />
