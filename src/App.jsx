@@ -15,6 +15,7 @@ import ChangeIcon from "./context/ChangeIcon";
 import RemoveFromFavorite from "./context/RemoveFromFavorite";
 import SearchContext from "./context/SearchContext";
 import SearchContextSeries from "./context/SearchContextSeries";
+import NotFound from "./components/pages/not-found/NotFound";
 const App = () => {
   const queryClient = new QueryClient();
   const router = createBrowserRouter([
@@ -29,6 +30,7 @@ const App = () => {
         { path: "topRatedSeries", element: <TopRatedSeries /> },
         { path: "favorite", element: <Favorite /> },
         { path: "details/:type/:id", element: <Details /> },
+        { path: "*", element: <NotFound /> },
       ],
     },
   ]);
