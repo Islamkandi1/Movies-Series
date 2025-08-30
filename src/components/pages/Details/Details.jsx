@@ -72,7 +72,7 @@ const Details = () => {
           <button
             type="button"
             onClick={back}
-            className="absolute top-[-20px] lg:top-[6 0px]  bg-[#0D0D0D] hover:bg-[#1F1F1F] transition-all duration-300  border-[1px] border-gray-500  capitalize px-4 py-2 rounded-[10px] cursor-pointer flex  items-center gap-2"
+            className="absolute top-[-20px] lg:top-[60px]  bg-[#0D0D0D] hover:bg-[#1F1F1F] transition-all duration-300  border-[1px] border-gray-500  capitalize px-4 py-2 rounded-[10px] cursor-pointer flex  items-center gap-2"
           >
             <span>
               <FaArrowLeft />
@@ -108,6 +108,7 @@ const Details = () => {
                   <span className="text-[1.2rem]">
                     <MdDateRange />
                   </span>
+
                   <span>
                     {data?.data.release_date
                       ? data?.data.release_date.split("", 4).join("")
@@ -147,7 +148,7 @@ const Details = () => {
                 {data?.data.overview}
               </p>
 
-              <section className="flex items-center gap-4 pb-7 lg:pb-0">
+              <section className="flex items-center gap-4 pb-5 lg:pb-0">
                 {data?.data.imdb_id && (
                   <button type="button">
                     <a
