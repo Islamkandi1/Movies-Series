@@ -42,7 +42,7 @@ const Searsh = ({ param }) => {
         <p className="capitalize text-[1.1rem] max-w-[350px] mb-4 md:max-w-[450px] mx-auto">
           Discover millions of movies, TV shows and people. Start exploring now!
         </p>
-        <form className="input flex gap-4" onSubmit={handleSubmit(mutate)}>
+        <form className="input flex flex-wrap gap-4" onSubmit={handleSubmit(mutate)}>
           <input
             type="searsh"
             placeholder="search and explore...."
@@ -51,7 +51,7 @@ const Searsh = ({ param }) => {
           />
           <button
             type="submit"
-            className="bg-main px-4 rounded-[8px] tracking-wide capitalize text-light cursor-pointer"
+            className="bg-main px-4 py-3 rounded-[8px] tracking-wide capitalize text-light cursor-pointer"
           >
             search
           </button>

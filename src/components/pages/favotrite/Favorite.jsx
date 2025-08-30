@@ -51,7 +51,7 @@ const Favorite = () => {
       <section className="pt-[2rem]">
         {movies.data.data.results.length == 0 &&
         series.data.data.results.length == 0 ? (
-          <section className="text-light capitalize text-center pt-[3rem] ">
+          <section className="text-light capitalize text-center pt-[3rem] px-3">
             <h2 className="text-[1.7rem] mb-4"> no favorite movies or series to watch</h2> 
             <p className="text-gray-400 text-[1.1rem]">"Start adding movies to your favorites to see them here!"</p>
           </section>

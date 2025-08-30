@@ -51,7 +51,7 @@ export default function Carousel() {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwipe h-dvh"
+        className="mySwipe h-[90vh] md:min-h-dvh"
       >
         {data?.data?.results.slice(0, 4).map((movie) => (
           <SwiperSlide key={movie.id}>
@@ -62,7 +62,7 @@ export default function Carousel() {
                 backgroundPosition: "center",
               }}
             >
-              <section className="container flex items-center h-dvh px-7 mx-auto">
+              <section className="container flex items-center h-[90vh] md:min-h-dvh md:min-h-dvh px-7 mx-auto">
                 <section className="content">
                   <h2 className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] capitalize mb-3 font-semibold ">
                     {movie.title}

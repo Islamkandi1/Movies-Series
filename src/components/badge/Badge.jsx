@@ -4,6 +4,8 @@ import { CiHeart } from "react-icons/ci";
 import { ChangeIconContext } from "../../context/ChangeIcon";
 const MyBadge = () => {
     const  {icon} = useContext(ChangeIconContext)
+
+    
   return (
     <>
       <Badge
