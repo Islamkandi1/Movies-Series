@@ -46,7 +46,7 @@ const TopRatedMovies = () => {
 
   return (
     <>
-    <section className="pt-[2rem] container mx-auto px-7">
+    <section className="pt-[2rem] container mx-auto px-5">
       <MediaCard results={data?.data?.results} />
       <section>
         <MyPagination page={page} totalPages={516} handlePage={handlePage} />

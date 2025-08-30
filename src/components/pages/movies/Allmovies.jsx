@@ -48,7 +48,7 @@ const Allmovies = () => {
 
   return (
     <>
-      <section className="container mx-auto  px-7 pt-[4rem]">
+      <section className="container mx-auto  px-5 pt-[4rem]">
         <Searsh param={"movie"} />
         <MediaCard
           results={searchData?.length == 0 ? data?.data?.results : searchData}

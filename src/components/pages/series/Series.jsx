@@ -47,7 +47,7 @@ const Series = () => {
 
   return (
     <>
-      <section className="containe mx-auto px-7 pt-[4rem]">
+      <section className="containe mx-auto px-5 pt-[4rem]">
         <Searsh param={"tv"} />
         <MediaCard
           results={

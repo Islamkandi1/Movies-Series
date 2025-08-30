@@ -48,7 +48,7 @@ https://api.themoviedb.org/3/tv/top_rated?page=${page}`,
 
   return (
     <>
-      <section className="pt-[2rem] container mx-auto px-7">
+      <section className="pt-[2rem] container mx-auto px-5">
         <MediaCard results={data?.data?.results} />
         <section>
           <MyPagination page={page} totalPages={114} handlePage={handlePage} />

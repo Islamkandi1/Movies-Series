@@ -35,7 +35,7 @@ const PopularSeries = () => {
   return (
     <div>
       <section>
-        <section className="container mx-auto px-7">
+        <section className="container mx-auto px-5">
           <h2 className="my-7 capitalize  relative text-[1.3rem] after:absolute after:bg-light after:w-full after:h-[2px] after:bottom-[-10px] after:left-0">
             popular series
           </h2>

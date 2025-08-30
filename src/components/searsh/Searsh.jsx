@@ -35,7 +35,7 @@ const Searsh = ({ param }) => {
 
   return (
     <>
-      <section className="pt-[.5rem] bg-[#141414] p-[3rem] text-center">
+      <section className="pt-[.5rem] bg-[#141414] p-[2rem] text-center">
         <h2 className="text-[1.5rem] md:text-[1.8rem] lg:text-[2rem] mb-4 text-main capitalize tracking-[1px] ">
           Welcome to netflix
         </h2>

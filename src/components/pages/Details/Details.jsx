@@ -68,7 +68,7 @@ const Details = () => {
           backgroundPosition: "center",
         }}
       >
-        <section className="container mx-auto lg:px-7 min-h-dvh flex items-center px-7 relative">
+        <section className="container mx-auto px-5 min-h-dvh flex items-center  relative">
           <button
             type="button"
             onClick={back}
@@ -108,7 +108,6 @@ const Details = () => {
                   <span className="text-[1.2rem]">
                     <MdDateRange />
                   </span>
-
                   <span>
                     {data?.data.release_date
                       ? data?.data.release_date.split("", 4).join("")
@@ -148,7 +147,7 @@ const Details = () => {
                 {data?.data.overview}
               </p>
 
-              <section className="flex items-center gap-4">
+              <section className="flex items-center gap-4 pb-7 lg:pb-0">
                 {data?.data.imdb_id && (
                   <button type="button">
                     <a
